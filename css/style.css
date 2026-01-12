@@ -178,15 +178,14 @@ button:hover {
 
 
 footer {
-   margin-bottom: 24px;
-  text-align: center;
-  margin-top: 36px
+   margin: 36 auto 24px;
 }
 
 footer a {
   text-decoration: none;
   color: #faf9d3;
   font-size: 14px;
+  text-align: center;
 }
 
 .copy small {
