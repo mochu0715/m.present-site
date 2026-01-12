@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>m.の手作りポーチプレゼント 応募フォーム</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Abhaya+Libre:wght@400;500;600;700;800&family=Kosugi+Maru&family=M+PLUS+Rounded+1c&family=RocknRoll+One&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="form-wrap">
+    <!-- <div class="notice">
+    <p>
+      □  心さん主催のライトさんフラスタ企画に参加していること(現在締切済み)<br>
+      □  GRPL当日にお会いできること 両日います！<br>
+      □  m.(@otaku_mchu)のXをフォロー ※お渡しの際の連絡の為
+    </p>
+    </div> -->
+    <h1>プレゼント企画 応募フォーム</h1>
+    <a><img src="image/main.PNG" id="main" alt="プレゼント企画 応募フォーム" srcset=""></a>
+
+    <p class="note">上記をご確認の上、必要事項をご入力ください</p>
+
+     <!-- 終了後ここにstyle="display:none;"を足す -->
+    <form id="requestForm" action="https://docs.google.com/forms/d/e/1FAIpQLScpWvc1GeRPzU7dkYrpP5xEE3RMd0wPHAvTtnyDWRUuRUq6Dw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true; showThanks();">
+      <label>
+        X(旧Twitter)名 <a class="example">＠〜〜〜</a>
+        <input type="text" name="entry.2104757864" required>
+      </label>
+
+      <label>
+       GRPL参戦日
+      <select name="entry.1773882634" required>
+        <option value="">選択してください</option>
+        <option value="2月7日（1日目）">2月7日（1日目）</option>
+        <option value="2月8日（2日目）">2月8日（2日目）</option>
+        <option value="両日参戦">両日参戦</option>
+    </select>
+</label>
+
+      <button type="submit">応募する</button>
+    </form>
+ </div>
+
+ <!-- 終了後ここのdisplaynoneを消す -->
+ <div id="closed" style="display:none;">
+  <img src="image/closed.png" alt="受付終了" class="closed-img">
+  <p class="thanks-text">当選者の方には後日、下記のアカウントよりDMにてご連絡させていただきます。</p>
+</div>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>  
+
+  <div id="thanks" style="display:none;">
+  <img src="image/thanks.png" alt="ありがとうございました" class="thanks-img">
+  <p class="thanks-text">ご応募ありがとうございます！<br>当選者の方には下記のアカウントよりDMにてご連絡させていただきます。</p>
+</div>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  
+
+   <footer>
+      <a href="https://twitter.com/otaku_mchu" target="_blank">
+        <img src="image/Xicon.png" id="Xicon" alt="Twitterはこちら" srcset="">
+      </a>
+
+      <p class="copy"><small>&copy;2026 m.／mochu</small></p>
+    </footer>
+  
+
+ <script>
+function showThanks() {
+  document.getElementById("requestForm").style.display = "none";
+  document.getElementById("thanks").style.display = "block";
+}
+</script>
+
+</body>
+</html>

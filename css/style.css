@@ -1,0 +1,184 @@
+@charset "UTE-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {font-size: 62.5%;}
+
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background: #9b6e6a;
+  display: flex;
+  color: #2d1f1f;
+  flex-direction: column;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+img {
+    max-width:70% ;
+    height:auto ;
+    padding-bottom: 24px;  
+  }
+
+.form-wrap {
+  background: #ffffff;
+  padding: 36px 30px;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: center; 
+}
+
+.notice {
+  background: #faf9d3;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.notice p {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #95332b;
+}
+
+.note {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.example {
+    font-size: 13px;
+    color: #989393;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #95332b;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background: #fff;
+}
+
+select:focus {
+  outline: none;
+  border-color: #95332b;
+}
+  
+
+button {
+  width: 70%;
+  padding: 12px;
+  border: none;
+  border-radius: 999px;
+  background: #95332b;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+  background: #9b6e6a;
+}
+
+#thanks {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.thanks-img {
+  max-width: 320px;
+  width: 80%;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.thanks-text {
+  font-size: 14px;
+  padding-bottom: 24px;
+  color:#faf9d3;
+}
+
+#closed {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.closed-img{
+  text-align: center;
+  max-width: 320px;
+  width: 80%;
+}
+
+#Xicon {
+    padding: 36px;
+    height: auto;   
+    width: 30%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 36px
+}
+
+footer a {
+  text-decoration: none;
+  color: #faf9d3;
+  font-size: 14px;
+}
+
+.copy small {
+    font-size: 1rem;
+    color:#faf9d3;
+
+}
