@@ -24,12 +24,13 @@ img {
     padding-bottom: 24px;  
   }
 
+
 .form-wrap {
   background: #ffffff;
-  padding: 36px 30px;
-  width: 80%;
   margin: 0 auto;
-  min-width: 700px;
+  padding: 24px 16px;
+  width: 80%;
+  min-width: 420px;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   text-align: center; 
