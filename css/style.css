@@ -18,19 +18,22 @@ body {
   min-height: 100vh;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
     max-width:70% ;
     height:auto ;
     padding-bottom: 24px;  
   }
 
-
 .form-wrap {
   background: #ffffff;
   margin: 0 auto;
   padding: 24px 16px;
-  width: 80%;
-  min-width: 420px;
+  width: 100%;
+  max-width: 420px;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   text-align: center; 
@@ -51,7 +54,7 @@ img {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 16px;
   margin-bottom: 30px;
   color: #95332b;
 }
@@ -164,10 +167,11 @@ button:hover {
     height: auto;   
     width: 30%;
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    margin-bottom: 24px;
+    display: inline-block;
 }
 
 footer {
+   margin-bottom: 24px;
   text-align: center;
   margin-top: 36px
 }
@@ -182,4 +186,23 @@ footer a {
     font-size: 1rem;
     color:#faf9d3;
 
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+
+  #Xicon {
+    padding: 36px;
+    height: auto;   
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+}
 }
